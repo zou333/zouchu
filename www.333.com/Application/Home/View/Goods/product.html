@@ -1,0 +1,75 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__css/product.css">
+	<!-- sm-banner开始 -->
+	<div id="sm-banner">
+		<ul>
+			<li class="cur"><a href="__PUBLIC__pro_details.html"><img src="__PUBLIC__images/sm_banner1.jpg" alt="" title=""></a></li>
+			<li><a href="__PUBLIC__pro_details.html"><img src="__PUBLIC__images/sm_banner2.jpg" alt="" title=""></a></li>
+			<li><a href="__PUBLIC__pro_details.html"><img src="__PUBLIC__images/sm_banner3.jpg" alt="" title=""></a></li>
+		</ul>
+		<ol>
+			<li class="cur"></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	<!-- sm-banner结束 -->
+
+	<!-- main开始 -->
+	<div class="main">
+		<div class="container">
+			<h2>产品中心</h2>
+			<h3>Product center</h3>
+			<p>当前位置：<a href="__PUBLIC__index.html">首页</a>><span>产品中心</span></p>
+			<div class="content">
+				<!-- 副导航开始 -->
+				<div class="subnav">
+					<foreach name="cate" item="value">
+					<a href="{:U('goods/product',['cid'=>$value['id']])}" <eq name="value['id']" value="$Think.get.cid"> class='selected'</eq>>{$value['cate_name']}</a>
+					</foreach>
+				</div>
+				<!-- 副导航结束 -->
+
+				<!-- tab选项卡开始 -->
+				<div class="tab">
+					<ul class="cur row">
+					<foreach name="goods" item="val">
+						<li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<div class="pro-link">
+								<a href="{:U('Goods/pro_details',['id'=>$val['id']])}">
+									<span class="pro-image"><img src="/{$val['image']}" /></span>
+									<span class="info">{$val['brand']['brand_name']}{$val['goods_name']}{$val['category']['cate_name']}</span>
+									<span class="price">￥{$val['shop_price']}</span>
+								</a>
+								<a href="__PUBLIC__shop_cart.html" class="add-cart">加入购物车</a>
+							</div>
+						</li>
+						</foreach>
+						
+					</ul>
+				</div>
+				<!-- tab选项卡结束 -->
+				
+				<div aria-label="Page navigation" class='page'>
+					{$page}
+				
+				    <!-- <ul> -->
+					    <!-- <li> -->
+					        <!-- <a href="__PUBLIC__#" aria-label="Previous"> -->
+					        	<!-- <span aria-hidden="true">上一页</span> -->
+					        <!-- </a> -->
+					    <!-- </li> -->
+					    <!-- <li class="active"><a href="__PUBLIC__#">1</a></li> -->
+					    <!-- <li><a href="__PUBLIC__#">2</a></li> -->
+					    <!-- <li><a href="__PUBLIC__#">3</a></li> -->
+					    <!-- <li><a href="__PUBLIC__#">...</a></li> -->
+					    <!-- <li> -->
+					        <!-- <a href="__PUBLIC__#" aria-label="Next"> -->
+					        	<!-- <span aria-hidden="true">下一页</span> -->
+					        <!-- </a> -->
+					    <!-- </li> -->
+				    <!-- </ul> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- main结束 -->

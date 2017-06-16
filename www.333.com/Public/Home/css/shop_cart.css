@@ -1,0 +1,386 @@
+@charset "UTF-8";
+body {
+  font-family: 微软雅黑;
+  font-size: 0;
+}
+
+.main {
+  background: url(../images/about_us_bg.jpg) 100% 100%;
+}
+.main .container {
+  color: #333;
+}
+.main .container .shop-header {
+  overflow: hidden;
+}
+.main .container .shop-header h2 {
+  display: inline-block;
+  margin-top: 35px;
+}
+.main .container .shop-header .shop-flow {
+  width: 600px;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  margin-right: -60px;
+}
+.main .container .shop-header .shop-flow i {
+  display: inline-block;
+  width: 430px;
+  height: 30px;
+  background: url(../images/shop_cart_image01.png) no-repeat;
+  margin-top: 40px;
+}
+.main .container .shop-header .shop-flow ol li {
+  width: 33.3333%;
+  display: inline-block;
+  font-size: 18px;
+}
+.main .container .shop-header .shop-flow ol li.cur {
+  color: #993333;
+}
+.main .container .shop-title {
+  border-bottom: 1px solid #333;
+  margin-bottom: 8px;
+}
+.main .container .shop-title a {
+  font-size: 24px;
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.main .container .shop-title a.cur {
+  color: #993333;
+}
+.main .container .content {
+  margin-bottom: 40px;
+  padding-top: 55px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #fff;
+  text-align: center;
+}
+.main .container .content form label {
+  height: 20px;
+  cursor: pointer;
+  font-weight: normal;
+  background: url(../images/check_box.jpg) no-repeat;
+}
+.main .container .content form label.default {
+  background: url(../images/checked_box.jpg) no-repeat;
+}
+.main .container .content form label input {
+  visibility: hidden;
+}
+.main .container .content form label span {
+  margin-left: 5px;
+}
+.main .container .content form .shop-cart-title {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.main .container .content form .mCSB_scrollTools {
+  height: 430px;
+  margin-top: 12px;
+}
+.main .container .content form .mCSB_scrollTools .mCSB_draggerRail {
+  width: 1px;
+  background: #993333;
+  border-radius: 0;
+}
+.main .container .content form .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 11px;
+  background: #993333;
+  border-radius: 0;
+}
+.main .container .content form .shop-box {
+  height: 455px;
+}
+.main .container .content form .shop-box .shop-cart {
+  font-size: 14px;
+  border: 1px solid #999;
+  padding: 5px 0;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+.main .container .content form .shop-box .shop-cart label {
+  width: 20px;
+}
+.main .container .content form .shop-box .shop-cart:first-child {
+  margin-top: 0;
+}
+.main .container .content form .shop-box .shop-cart .text {
+  height: 200px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.main .container .content form .shop-box .shop-cart .text .num {
+  overflow: hidden;
+  padding-left: 25px;
+}
+.main .container .content form .shop-box .shop-cart .text .num i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: url(../images/shop_cart_icon.png) no-repeat;
+}
+.main .container .content form .shop-box .shop-cart .text .num i.add {
+  background-position: 100%;
+}
+.main .container .content form .shop-box .shop-cart .text .num input {
+  width: 40px;
+  height: 20px;
+  border: none;
+  border: 1px solid #666;
+  float: left;
+  margin: 0 5px;
+  text-align: center;
+}
+.main .container .content form .shop-box .shop-cart a {
+  width: 185px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.main .container .content form .shop-box .shop-cart span {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.main .container .content form .shop-box .shop-cart button {
+  border: none;
+  background: none;
+  margin-bottom: 5px;
+}
+.main .container .content form .sub, .main .container .content form .add {
+  cursor: pointer;
+}
+.main .container .content form ol {
+  overflow: hidden;
+  border-bottom: 1px solid #999;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.main .container .content form ol li {
+  float: left;
+}
+.main .container .content form ol li .default {
+  background: url(../images/checked_box.jpg) no-repeat;
+}
+.main .container .content form ol li .text {
+  overflow: hidden;
+  font-size: 18px;
+}
+.main .container .content form ol li .text a {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.main .container .content form ol li .text p {
+  font-size: 14px;
+}
+.main .container .content form ol li .text p span {
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.main .container .content form ol li .text > span {
+  display: block;
+  font-size: 20px;
+  color: #993333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.main .container .content form ol li .text .num {
+  float: right;
+}
+.main .container .content form ol li .text i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: url(../images/shop_cart_icon.png) no-repeat;
+}
+.main .container .content form ol li .text i.add {
+  background-position: 100%;
+}
+.main .container .content form ol li .text input {
+  width: 40px;
+  height: 20px;
+  border: none;
+  border: 1px solid #666;
+  float: left;
+  margin: 0 5px;
+  text-align: center;
+}
+.main .container .content form ol li.pro-img {
+  width: 40%;
+}
+.main .container .content form ol li.pro-img label {
+  width: 20px;
+  margin-right: 5px;
+}
+.main .container .content form ol li.pro-info {
+  width: 60%;
+  text-align: left;
+  padding: 0 5px;
+}
+.main .container .content form .shop-foot {
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+.main .container .content form .shop-foot p {
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 15px;
+}
+.main .container .content form .shop-foot p span {
+  font-size: 24px;
+  color: #993333;
+}
+.main .container .content form .shop-foot a {
+  display: inline-block;
+  width: 165px;
+  height: 50px;
+  background: #993333;
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  behavior: url(PIE.htc);
+}
+
+/* 响应式 */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main .container .shop-header h2 {
+    margin-top: 20px;
+  }
+  .main .container .shop-header .shop-flow {
+    width: 600px;
+  }
+  .main .container .shop-header .shop-flow i {
+    margin-top: 20px;
+  }
+  .main .container .shop-header .shop-flow ol li {
+    font-size: 16px;
+  }
+  .main .container .shop-title {
+    margin-bottom: 5px;
+  }
+  .main .container .shop-title a {
+    font-size: 20px;
+    margin: 5px 50px;
+  }
+  .main .container .content {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+  }
+  .main .container .content form .shop-cart-title {
+    font-size: 16px;
+    margin-right: 35px;
+    margin-bottom: 5px;
+  }
+  .main .container .content form .mCSB_scrollTools {
+    height: 335px;
+  }
+  .main .container .content form .shop-box {
+    height: 360px;
+  }
+  .main .container .content form .shop-box .shop-cart {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .main .container .content form .shop-box .shop-cart img {
+    width: 140px;
+  }
+  .main .container .content form .shop-box .shop-cart .text {
+    height: 152px;
+  }
+  .main .container .content form .shop-box .shop-cart .text .num {
+    padding-left: 13px;
+  }
+  .main .container .content form .shop-box .shop-cart a {
+    width: 140px;
+  }
+  .main .container .content form .shop-foot {
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  .main .container .content form .shop-foot p {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+  .main .container .content form .shop-foot p span {
+    font-size: 20px;
+  }
+  .main .container .content form .shop-foot a {
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .main .container .shop-title a {
+    margin: 5px 30px;
+  }
+  .main .container .content form .shop-cart-title {
+    font-size: 14px;
+  }
+  .main .container .content form .shop-box .shop-cart {
+    margin-top: 10px;
+  }
+  .main .container .content form .shop-box .shop-cart button {
+    display: block;
+    margin-left: 27px;
+  }
+  .main .container .content form .shop-box .shop-cart a.info-text {
+    margin-left: 30px;
+  }
+  .main .container .content form .shop-box .shop-cart .text span {
+    margin-left: 10px;
+  }
+  .main .container .content form .shop-box .shop-cart .text .num {
+    padding-left: 0px;
+  }
+  .main .container .content form .shop-box .shop-cart .text .num input {
+    width: 35px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .container .content {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .main .container .shop-title a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main .container .content form ol li.pro-img {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main .container .content form ol li.pro-img label {
+    float: left;
+  }
+  .main .container .content form ol li.pro-info {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=shop_cart.css.map */

@@ -1,0 +1,403 @@
+@charset "UTF-8";
+body {
+  font-family: 微软雅黑;
+  font-size: 0;
+}
+
+.main {
+  padding-top: 30px;
+  background: url(../images/about_us_bg.jpg) 100% 100%;
+}
+.main .container {
+  color: #333;
+  padding-bottom: 38px;
+}
+.main .container > p {
+  font-size: 14px;
+  text-align: left;
+  padding-top: 10px;
+  border-bottom: 1px solid #333;
+}
+.main .container > p span {
+  color: #993333;
+}
+.main .container .content {
+  background: #fff;
+  padding-top: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 30px;
+}
+.main .container .content .order-content {
+  border: 1px solid #999;
+  padding-top: 18px;
+  padding-bottom: 40px;
+}
+.main .container .content .order-subnav {
+  width: 83%;
+  text-align: center;
+}
+.main .container .content .order-subnav h3 {
+  background: #993333;
+  line-height: 48px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid #999;
+  border-bottom: none;
+}
+.main .container .content .order-subnav dl {
+  border: 1px solid #999;
+  padding-bottom: 25px;
+}
+.main .container .content .order-subnav dl dt {
+  font-size: 18px;
+  color: #fff;
+  background: #aaa;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 20px 0;
+  position: relative;
+}
+.main .container .content .order-subnav dl dt:first-child {
+  margin-top: 0;
+}
+.main .container .content .order-subnav dl dt i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../images/order_icon01.png) no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  left: 14%;
+}
+.main .container .content .order-subnav dl dt i.order-form {
+  background-position: 33%;
+}
+.main .container .content .order-subnav dl dt i.order-wallet {
+  background-position: 66%;
+}
+.main .container .content .order-subnav dl dt i.order-safe {
+  background-position: 100%;
+}
+.main .container .content .order-subnav dl dd {
+  font-size: 14px;
+}
+.main .container .content .order-subnav dl dd a:hover, .main .container .content .order-subnav dl dd a.cur {
+  color: #993333;
+}
+.main .container .content .order-header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
+.main .container .content .order-header ul {
+  overflow: hidden;
+}
+.main .container .content .order-header ul li {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+}
+.main .container .content .order-header ul li a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px;
+  border-bottom: 5px solid #fff;
+}
+.main .container .content .order-header ul li a:hover, .main .container .content .order-header ul li a.cur {
+  color: #993333;
+  border-bottom: 5px solid #993333;
+}
+.main .container .content table {
+  width: 100%;
+}
+.main .container .content table thead {
+  font-size: 18px;
+  color: #fff;
+  line-height: 40px;
+  background: #993333;
+}
+.main .container .content table thead tr th {
+  width: 13%;
+  font-weight: normal;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+.main .container .content table thead tr th:first-child {
+  width: 48%;
+}
+.main .container .content table tbody tr {
+  border-bottom: 1px solid #666;
+}
+.main .container .content table tbody tr td {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 21px;
+  padding-bottom: 18px;
+}
+.main .container .content table tbody tr td p {
+  font-size: 16px;
+}
+.main .container .content table tbody tr td a {
+  display: inline-block;
+  max-width: 200px;
+}
+.main .container .content table tbody tr td a:hover, .main .container .content table tbody tr td .order-subnav dl dd a.cur, .main .container .content .order-subnav dl dd table tbody tr td a.cur, .main .container .content table tbody tr td .order-header ul li a.cur, .main .container .content .order-header ul li table tbody tr td a.cur, .main .container .content table tbody tr td a.cur {
+  color: #993333;
+}
+.main .container .content table tbody tr td:first-child {
+  text-align: left;
+}
+.main .container .content table tbody tr td:first-child a {
+  padding-left: 5px;
+}
+.main .container .content ol {
+  padding: 15px;
+  border-bottom: 1px solid #999;
+  overflow: hidden;
+}
+.main .container .content ol li {
+  float: left;
+}
+.main .container .content ol li h4 {
+  margin-top: 0;
+}
+.main .container .content ol li h4 a {
+  font-size: 18px;
+  line-height: 22px;
+}
+.main .container .content ol li p {
+  font-size: 16px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.main .container .content ol li p span {
+  display: inline-block;
+  margin-right: 15px;
+}
+.main .container .content ol li p button, .main .container .content ol li p a {
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  width: 80px;
+  background: #993333;
+  color: #fff;
+  border: none;
+  float: left;
+  border-radius: 5px;
+  behavior: url(PIE.htc);
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.main .container .content ol li.order-image {
+  width: 40%;
+  text-align: center;
+}
+.main .container .content ol li.order-image a {
+  display: inline-block;
+}
+.main .container .content ol li.order-info {
+  margin-top: 10px;
+  width: 60%;
+}
+.main .container .content ol li.operate {
+  width: 100%;
+  text-align: right;
+}
+.main .container .content ol li.operate p {
+  display: inline-block;
+}
+.main .container .content .page {
+  width: 540px;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.main .container .content .page ul {
+  margin-bottom: 0;
+  display: block;
+  float: left;
+}
+.main .container .content .page ul li {
+  margin: 0 13px;
+  float: left;
+  border: 1px solid #666;
+}
+.main .container .content .page ul li a {
+  display: block;
+  color: #000;
+  padding: 4px 10px;
+}
+.main .container .content .page ul li.active, .main .container .content .page ul li:hover {
+  border-color: #993333;
+  background: #993333;
+}
+.main .container .content .page ul li.active a, .main .container .content .page ul li:hover a {
+  color: #fff;
+}
+.main .container .content .page form {
+  float: left;
+  margin-left: 5px;
+}
+.main .container .content .page form label {
+  font-weight: normal;
+}
+.main .container .content .page form label input {
+  width: 30px;
+  line-height: 28px;
+  border: none;
+  border: 1px solid #666;
+  margin: 0 5px;
+  text-align: center;
+}
+.main .container .content .page form label input:focus {
+  outline: none;
+}
+.main .container .content .page form button {
+  line-height: 22px;
+  background: none;
+  border: none;
+  border: 1px solid #666;
+  padding: 3px 8px;
+  margin-left: 10px;
+}
+.main .container .content .page form button:focus {
+  outline: none;
+}
+
+/* 响应式 */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main .container > p {
+    font-size: 12px;
+  }
+  .main .container .content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  .main .container .content .order-content {
+    padding-top: 9px;
+    padding-bottom: 20px;
+  }
+  .main .container .content .order-subnav {
+    width: 83%;
+  }
+  .main .container .content .order-subnav h3 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .main .container .content .order-subnav dl {
+    padding-bottom: 10px;
+  }
+  .main .container .content .order-subnav dl dt {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px 0;
+  }
+  .main .container .content .order-subnav dl dt i {
+    width: 18px;
+    height: 18px;
+    background: url(../images/order_icon02.png) no-repeat;
+    margin-top: -9px;
+    left: 14%;
+  }
+  .main .container .content .order-subnav dl dd {
+    font-size: 14px;
+  }
+  .main .container .content .order-header {
+    margin-bottom: 8px;
+  }
+  .main .container .content table thead {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .main .container .content table tbody tr td {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
+  .main .container .content table tbody tr td p {
+    font-size: 14px;
+  }
+  .main .container .content table tbody tr td img {
+    width: 130px;
+  }
+  .main .container .content table tbody tr td a {
+    max-width: 160px;
+  }
+  .main .container .content .page {
+    width: 420px;
+    padding-top: 20px;
+    font-size: 12px;
+  }
+  .main .container .content .page ul li {
+    margin: 0 10px;
+  }
+  .main .container .content .page ul li a {
+    display: block;
+    color: #000;
+    padding: 2px 6px;
+  }
+  .main .container .content .page form label input {
+    width: 25px;
+    line-height: 21px;
+  }
+  .main .container .content .page form button {
+    line-height: 21px;
+    padding: 0 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .main .container .content .order-subnav dl dt i {
+    display: none;
+  }
+  .main .container .content .order-subnav dl dd {
+    font-size: 14px;
+  }
+  .main .container .content .order-content {
+    padding-top: 15px;
+  }
+  .main .container .content .order-header {
+    margin-bottom: 12px;
+  }
+  .main .container .content .order-header ul li a {
+    padding-bottom: 4px;
+  }
+  .main .container .content table thead tr td {
+    width: 15%;
+  }
+  .main .container .content table thead tr td:first-child {
+    width: 55%;
+  }
+  .main .container .content table tbody tr td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .main .container .content table tbody tr td img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .container .content .page {
+    width: 100%;
+  }
+  .main .container .content .page ul li {
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  .main .container .content .page form {
+    float: right;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main .container .content ol li.order-info {
+    width: 100%;
+  }
+  .main .container .content ol li.order-image {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=order.css.map */

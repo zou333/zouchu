@@ -1,0 +1,281 @@
+@charset "UTF-8";
+body {
+  font-family: 微软雅黑;
+  font-size: 0;
+}
+
+.main {
+  background: url(../images/about_us_bg.jpg) 100% 100%;
+}
+.main .container {
+  color: #333;
+  padding-bottom: 40px;
+}
+.main .container .shop-header {
+  overflow: hidden;
+}
+.main .container .shop-header h2 {
+  display: inline-block;
+  margin-top: 35px;
+}
+.main .container .shop-header .shop-flow {
+  width: 600px;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  margin-right: -60px;
+}
+.main .container .shop-header .shop-flow i {
+  display: inline-block;
+  width: 430px;
+  height: 30px;
+  background: url(../images/pay_image.png) no-repeat;
+  margin-top: 40px;
+}
+.main .container .shop-header .shop-flow ol li {
+  width: 33.3333%;
+  display: inline-block;
+  font-size: 18px;
+}
+.main .container .shop-header .shop-flow ol li.cur {
+  color: #993333;
+}
+.main .container .content {
+  background: #fff;
+  margin-top: 25px;
+  padding: 10px 20px 30px 20px;
+}
+.main .container .content h3 {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.main .container .content .submit-success {
+  margin: 0;
+  border: 1px solid #ccc;
+}
+.main .container .content .submit-success i {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 35px;
+  width: 81px;
+  height: 80px;
+  background: url(../images/pay_success.png) no-repeat;
+}
+.main .container .content .submit-success h3 {
+  margin-top: 10px;
+  margin-left: 0;
+}
+.main .container .content .submit-success p {
+  font-size: 16px;
+}
+.main .container .content .submit-success p span {
+  color: #ff0000;
+}
+.main .container .content .pay-ways {
+  border: 1px solid #ccc;
+  padding: 0 20px;
+}
+.main .container .content .pay-ways h4 {
+  border-bottom: 1px solid #999;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+.main .container .content .pay-ways label {
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  margin-left: 17px;
+  background: url(../images/pay_unchecked_icon.png) no-repeat;
+}
+.main .container .content .pay-ways label.default {
+  background: url(../images/pay_checked_icon.png) no-repeat;
+}
+.main .container .content .pay-ways label input {
+  visibility: hidden;
+}
+.main .container .content .pay-ways .mCSB_scrollTools {
+  height: 70px;
+}
+.main .container .content .pay-ways .mCSB_scrollTools .mCSB_draggerRail {
+  width: 1px;
+  background: #993333;
+  border-radius: 0;
+}
+.main .container .content .pay-ways .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 11px;
+  background: #993333;
+  border-radius: 0;
+}
+.main .container .content .pay-ways .e-payment {
+  height: 85px;
+}
+.main .container .content .pay-ways .e-payment, .main .container .content .pay-ways .other-payment {
+  padding: 15px 0 0 0;
+}
+.main .container .content .pay-ways .e-payment .pay-box, .main .container .content .pay-ways .other-payment .pay-box {
+  border: 1px solid #999;
+  width: 217px;
+  height: 55px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background: url(../images/pay_bank_icon.jpg) no-repeat;
+}
+.main .container .content .pay-ways .e-payment .pay-box.alipay, .main .container .content .pay-ways .other-payment .pay-box.alipay {
+  background: url(../images/pay_alipay_icon.jpg) no-repeat;
+}
+.main .container .content .pay-ways .e-payment .pay-box.weChat, .main .container .content .pay-ways .other-payment .pay-box.weChat {
+  background: url(../images/pay_weChat_icon.jpg) no-repeat;
+}
+.main .container .content .password {
+  font-size: 18px;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+.main .container .content .password i {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  float: left;
+  margin-right: 4px;
+  background: url(../images/pay_safe_icon.png) no-repeat;
+}
+.main .container .content .password .pay-password {
+  margin-top: 20px;
+}
+.main .container .content .password .pay-password span {
+  display: inline-block;
+  vertical-align: top;
+}
+.main .container .content .password .pay-password p {
+  display: inline-block;
+}
+.main .container .content .password .pay-password p input {
+  width: 50px;
+  height: 45px;
+  text-align: center;
+  border: none;
+  border: 1px solid #000;
+  border-left: none;
+}
+.main .container .content .password .pay-password p input:first-child {
+  border-left: 1px solid #000;
+}
+.main .container .content .password .pay-password a {
+  font-size: 18px;
+  color: #006699;
+  margin-left: 5px;
+}
+.main .container .content .password > a {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  float: right;
+  width: 165px;
+  line-height: 50px;
+  background: #993333;
+  border-radius: 10px;
+  behavior: url(PIE.htc);
+}
+
+/* 响应式 */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main .container .shop-header h2 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .main .container .shop-header .shop-flow {
+    width: 600px;
+  }
+  .main .container .shop-header .shop-flow i {
+    margin-top: 20px;
+  }
+  .main .container .shop-header .shop-flow ol li {
+    font-size: 16px;
+  }
+  .main .container .content h3 {
+    font-size: 18px;
+  }
+  .main .container .content .pay-ways label {
+    width: 18px;
+    height: 18px;
+    background-size: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .main .container .content .pay-ways label.default {
+    background-size: 100%;
+  }
+  .main .container .content .pay-ways .e-payment .pay-box, .main .container .content .pay-ways .other-payment .pay-box {
+    width: 190px;
+    height: 50px;
+    background-size: 100%;
+  }
+  .main .container .content .pay-ways .e-payment .pay-box.alipay, .main .container .content .pay-ways .other-payment .pay-box.alipay {
+    background-size: 100%;
+  }
+  .main .container .content .pay-ways .e-payment .pay-box.weChat, .main .container .content .pay-ways .other-payment .pay-box.weChat {
+    background-size: 100%;
+  }
+  .main .container .content .password {
+    font-size: 16px;
+  }
+  .main .container .content .password > a {
+    width: 145px;
+    line-height: 45px;
+    font-size: 22px;
+  }
+  .main .container .content .password .pay-password i {
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
+  .main .container .content .password .pay-password input {
+    width: 45px;
+    height: 40px;
+  }
+  .main .container .content .password .pay-password a {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .main .container .content .submit-success i {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .container .content .password .pay-password p input {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main .container .content .password .pay-password a {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 570px) {
+  .col-xs-6 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .main .container .content .pay-ways {
+    padding: 0 5px;
+  }
+  .main .container .content .pay-ways .e-payment .pay-box, .main .container .content .pay-ways .other-payment .pay-box {
+    width: 205px;
+  }
+
+  .main .container .content .pay-ways .mCSB_scrollTools {
+    visibility: hidden;
+  }
+
+  .main .container .content .password .pay-password p input {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*# sourceMappingURL=pay.css.map */

@@ -1,0 +1,401 @@
+﻿@charset "utf-8";
+body{
+	font-family: 微软雅黑;
+	font-size: 0;
+}
+.main{
+	background: url(../images/about_us_bg.jpg) 100% 100%;
+	.container{
+		color: #333;
+		&>p{
+			font-size: 14px;
+			text-align: left;
+			padding-top: 30px;
+			border-bottom: 1px solid #333;
+			span{
+				color: #993333;
+			}
+		}
+		.content{
+			margin-bottom: 40px;
+			padding:{
+				top: 10px;
+				bottom: 15px;
+				left: 45px;
+				right: 45px;
+			}
+			background: #fff;
+			text-align: left;
+			.subnav{
+				width: 100%;
+				margin-bottom: 27px;
+				border: 1px solid #993333;
+				a{
+					display: inline-block;
+					width: 20%;
+					font-size: 20px;
+					line-height: 50px;
+					text-align: center;
+					&.selected{
+						background: #993333;
+						color: #fff;
+					}
+					&:hover{
+						@extend .selected;
+					}
+				}
+			}
+			.tab{
+				.album{
+					width: 480px;
+					margin: 0 auto;
+					border: 1px solid #999;
+					&>img{
+						width: 478px;
+						height: 478px;
+						cursor: pointer;
+						border-bottom: 1px solid #999;
+					}
+					.album_show{
+						padding: 9px;
+						overflow: hidden;
+						text-align: center;
+						span{
+							display: block;
+							padding: 12px 5px;
+							background: #ccc;
+							cursor: pointer;
+							&.pro_prev{
+								float: left;
+							}
+							&.pro_next{
+								float: right;
+							}
+							&:hover{
+								background: #993333;
+							}
+						}
+						.view{
+							display: inline-block;
+							width: 360px;
+							line-height: 120px;
+							overflow: hidden;
+							ul{
+								margin-left: -15px;
+								overflow: hidden;
+								li{
+									float: left;
+									margin-left: 15px;
+									&.cur{
+										img{
+											border: 1px solid #993333;
+										}
+									}
+									img{
+										cursor: pointer;
+										border: 1px solid #ccc;
+										&:hover{
+											border-color: #993333;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.pro_info{
+					letter-spacing: 2px;
+					h2{
+						font-size: 24px;
+						line-height: 36px;
+					}
+					// 滚动条样式修改
+					.mCSB_scrollTools{
+						height: 500px;
+					}
+					.mCSB_scrollTools .mCSB_draggerRail{
+					    width:1px;
+					    background: #993333;
+					    border-radius: 0;
+				    }
+					.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+						width: 11px;
+						background: #993333;
+						border-radius: 0;
+					}
+					.pro_text{
+						height: 500px;
+						padding-top: 30px;
+						div{
+							font-size: 20px;
+							margin-bottom: 30px;
+							span{
+								text-align: center;
+								display: inline-block;
+							}
+							&.price span{
+								color: #ff0000;
+							}
+							&.size span{								
+								width: 28px;
+								line-height: 28px;
+								text-align: center;
+								border: 1px solid #999;
+								margin: 0 8px;
+								cursor: pointer;
+								&.selected{
+									border-color: #993333;
+								}
+							}
+							&.color span{
+								width: 56px;
+								line-height: 28px;
+								border: 1px solid #999;
+								margin-right: 38px;
+								cursor: pointer;
+								&.selected{
+									border-color: #993333;
+								}
+							}
+							&.number{
+								a{
+									display: inline-block;
+									width: 38px;
+									line-height: 38px;
+									border: 1px solid #999;
+									text-align: center;
+								}
+								input{
+									width: 80px;
+									line-height: 38px;
+									border: 1px solid #999;
+									text-align: center;
+									border:{
+										left: none;
+										right: none;
+									}
+									margin: 0 -8px;
+								}
+							}
+							&.link a{
+								width: 160px;
+								display: inline-block;
+								line-height: 50px;
+								color: #fff;
+								background: #993333;
+								text-align: center;
+								border-radius: 5px;
+								behavior: url(PIE.htc);
+								margin-right: 20px;
+							}
+							&.service{
+								display: table;
+								margin-top: 70px;
+							}
+							&.service .label{
+								width: 110px;
+								font-size:20px;
+								color: #333;
+								font-weight: normal;
+								display:table-cell;
+								padding: 0;
+							}
+							&.service p{
+								display:table-cell;
+							}
+							&.service span{
+								width: 136px;
+								line-height: 25px;
+								text-align: left;
+								margin-bottom: 20px;
+								i{
+									width: 25px;
+									height: 25px;
+									display: inline-block;
+									float: left;
+									margin-right: 5px;
+									background: url(../images/pro_details_icon.png) no-repeat;
+									&.on_time{
+										background-position: 50%;
+									}
+									&.seven_day{
+										background-position: 100%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* 响应式 */
+@media (min-width:768px) and (max-width:1200px){
+	 .main .container .content .tab .pro_info .pro_text div.number input{
+    	margin-left: -7px;
+    }
+	.main{
+		.container{
+			&>p{
+				font-size: 12px;
+			}
+			.content{
+				padding:{
+					top: 25px;
+					bottom: 5px;
+					left: 15px;
+					right: 15px;
+				}
+				.tab{
+					.album{
+						width: 330px;
+						&>img{
+							width: 328px;
+							height: 328px;
+						}
+						.album_show{
+							padding: 5px;
+							span{
+								padding: 8px 4px;
+								img{
+									width: 14px;
+									height: 67px;
+								}
+							}
+							.view{
+								width: 243px;
+								line-height: 83px;
+								ul{
+									margin-left: -10px;
+									li{
+										margin-left: 10px;
+										img{
+											width: 74px;
+											height: 74px;
+										}
+									}
+								}
+							}
+						}
+					}
+					.pro_info{
+						letter-spacing: 2px;
+						h2{
+							font-size: 22px;
+						}
+						// 滚动条样式修改
+						.mCSB_scrollTools{
+							height: 300px;
+						}
+						.pro_text{
+							height: 300px;
+							padding-top: 5px;
+							div{
+								font-size: 18px;
+								margin-bottom: 25px;
+								&.link a{
+									width: 150px;
+									line-height: 40px;
+								}
+								&.service{
+									margin-top: 32px;
+								}
+								&.service .label{
+									width: 95px;
+									font-size:18px;
+								}
+								&.service span{
+									width: 120px;
+									i{
+										margin-right: 0;
+									}
+								}
+							}
+						}
+					}
+				}				
+			}
+		}
+	}
+}
+@media (min-width:768px) and (max-width:992px){
+    .main .container .content .tab .pro_info{
+    	padding-left: 35px;
+    }
+}
+@media screen and (max-width:767px){
+	.main .container .content{
+		padding:{
+			left: 5px;
+			right: 5px;
+		}
+	}
+	.main .container .content .tab .pro_info{
+		padding: 0 10px;
+	}
+	.main .container .content .tab .album{
+		width: 262px;
+		&>img{
+			width: 260px;
+			height: 260px;
+		}
+		.album_show{
+			span{
+				display: none;
+			}
+			ul li{
+				width: 20px;
+				height: 5px;
+				background: #fff;
+				border: 1px solid #993333;
+				&.cur{
+					background: #993333;
+				}
+			}
+			.view{
+				width: 85%;
+				ul{
+					margin-left: 0;
+					width: 210px;
+					margin: 0 auto;
+					li{
+						margin: 0 7px;
+					}
+				}
+			}
+		} 
+	}
+}
+@media screen and (max-width:475px){
+	.main .container .content .tab .pro_info .pro_text div.color span{
+		margin-right: 0;
+	}
+	.main .container .content .tab .pro_info .pro_text div.number span{
+		width: 70px;
+	}
+	.main .container .content .tab .pro_info .pro_text div.link a{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.main .container .content .tab .pro_info .pro_text div.service span{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width:450px){
+	.main .container .content .subnav{
+		text-align: left;
+	}
+	.main .container .content .subnav a{
+		width: 33.3333%;
+		border: 1px solid #fff;
+	}
+	.main .container .content .tab ul li .pro-link .pro-image{
+		width: 219px;
+		height: 240px;
+		background-size: 100%;
+	}
+}

@@ -1,0 +1,229 @@
+﻿@charset "utf-8";
+body{
+	font-family: 微软雅黑;
+	font-size: 0;
+}
+.main{
+	background: url(../images/about_us_bg.jpg) 100% 100%;
+	.container{
+		color: #333;
+		padding-bottom: 40px;
+		.shop-header{
+			overflow: hidden;
+			h2{
+				display: inline-block;
+				margin:{
+					top: 35px;
+				}
+			}
+			.shop-flow{
+				width: 600px;
+				display: inline-block;
+				float: right;
+				text-align: center;
+				margin-right: -60px;
+				i{
+					display: inline-block;
+					width: 430px;
+					height: 30px;
+					background: url(../images/pay_image.png) no-repeat;
+					margin:{
+						top: 40px;
+					}
+				}
+				ol{
+					li{
+						width: 33.3333%;
+						display: inline-block;
+						font-size: 18px;
+						&.cur{
+							color: #993333;
+						}
+					}
+				}
+			}	
+		}
+		.content{
+			background: #fff;
+			text-align: center;
+			margin-top: 30px;
+			padding:{
+				top: 55px;
+				bottom: 120px;
+			}
+			h1{
+				font-size: 40px;
+				color: #000;
+				line-height: 120px;
+				display: inline-block;
+				overflow: hidden;
+				i{
+					display: inline-block;
+					width: 123px;
+					height: 120px;
+					float: left;
+					margin-right: 45px;
+					background: url(../images/pay_success_icon.png) no-repeat;
+				}
+			}
+			.success-info{
+				display: inline-block;
+				margin-left: 105px;
+				p{
+					text-align: left;
+				}
+			}
+			p{
+				font-size: 24px;
+				margin:{
+					top: 20px;
+					bottom: 20px;
+				}
+				&.info{
+					font-size: 18px;
+				}
+				span{
+					font-size: 30px;
+					color: #ff0000;
+				}
+				a{
+					display: inline-block;
+					width: 170px;
+					line-height: 50px;
+					background: #993333;
+					color: #fff;
+					font-size: 24px;
+					border-radius: 10px;
+					behavior: url(PIE.htc);
+					margin: 0 40px;
+					&:first-child{
+						margin-left: 80px;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
+
+
+/* 响应式 */
+@media (min-width:768px) and (max-width:1200px){
+	.main{
+		.container{
+			.shop-header{
+				h2{
+					margin-top: 20px;
+					font-size: 24px;
+				}
+				.shop-flow{
+					width: 600px;
+					i{
+						margin-top: 20px;
+					}
+					ol li{
+						font-size: 16px;
+					}
+				}	
+			}
+			.content{
+				margin-top: 25px;
+				padding:{
+					top: 10px;
+					bottom: 30px;
+				}
+				h1{
+					font-size: 36px;
+					line-height: 100px;
+					i{
+						width: 105px;
+						height: 100px;
+						background-size: 100%;
+					}
+				}
+				.success-info{
+					margin-left: 95px;
+					.info{
+						font-size: 16px;
+					}
+				}
+				p{
+					font-size: 20px;
+					span{
+						font-size: 24px;
+					}
+					a{
+						width: 142px;
+						line-height: 42px;
+						font-size: 20px;
+						margin: 0 30px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:767px){
+	.main{
+		background: #fff;
+		.container{
+			.content{
+				padding:{
+					top: 70px;
+					bottom: 50px;
+				}
+				h1{
+					font-size: 30px;
+					line-height: 148px;
+					i{
+						width: 150px;
+						height: 147px;
+						margin-right: 10px;
+						background: url(../images/sm_pay_success.png) no-repeat;
+					}
+				}
+				.success-info{
+					margin-left: 0;
+					p{
+						text-align: center;
+					}
+					.info{
+						font-size: 24px;
+					}
+				}
+				p{
+					font-size: 30px;
+					margin:{
+						top: 30px;
+						bottom: 35px;
+					}
+					a{
+						display: block;
+						width: 60%;
+						line-height: 80px;
+						background: #ff0000;
+						font-size: 30px;
+						border-radius: 0;
+						margin: 0 auto;
+						&:first-child{
+							margin-left: 0;
+							margin: 0 auto;
+							margin-bottom: 30px;
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+@media screen and (max-width:380px){
+	.main .container .content p a{
+		width: 100%;
+	}
+	.main .container .content h1 span{
+		display: block;
+	}
+}

@@ -1,0 +1,273 @@
+﻿@charset "utf-8";
+body{
+	font-size: 0;
+}
+.main-top{
+	position: relative;
+	margin-bottom: 30px;
+	.header{
+		height: 135px;
+		position: absolute;
+		z-index: 999;
+	}
+}
+#banner{
+	position: relative;
+	ul{
+		margin-bottom: 0;
+		li{
+			display: none;
+			img{
+				width: 100%;
+			}
+			&.cur{
+				display: block;
+			}
+		}
+	}
+	ol{
+		position: absolute;
+		bottom: 2.5974%;
+		left: 50%;
+		margin-left: -117px;
+		overflow: hidden;
+		margin-bottom: 0;
+		li{	
+			width: 35px;
+			height: 35px;
+			margin-right: 65px;		
+			background: #f8f8f8;
+			border: 2px solid #993333;
+			border-radius: 50%;
+			behavior:url(PIE.htc);
+			float: left;
+			&.cur{
+				background: #993333;
+			}
+		}
+	}
+}
+.main{
+	.pro-show{
+		text-align: center;
+		width: 1135px;
+		background: #7d7d79;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		&>a{
+			display: inline-block;
+			width: 51px;
+			height: 200px;
+			&.prev{
+				background: url(../images/index_prev.png) no-repeat 50%;
+				}
+			&.next{
+				background: url(../images/index_next.png) no-repeat 50%;
+			}
+		}
+		.view{
+			display: inline-block;
+			width: 1032px;
+			overflow: hidden;
+			ul{
+				overflow: hidden;
+				li{
+					text-align: center;
+					margin-left: 19px;
+					margin-right: 19px;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+/* 小屏幕样式开始 */
+.sm-main{
+	font-size: 22px;
+	.sm-nav{
+		margin:{
+			top: 30px;
+			bottom: 50px;
+		}
+		ul{
+			overflow: hidden;
+			li{
+				text-align: center;
+				width: 25%;
+				float: left;
+				a{
+					font-size: 24px;
+					color: #333;
+					img{
+						margin-bottom: 7px;
+					}
+				}
+			}
+		}
+	}
+	.sm-index-product{
+		ul{
+			overflow: hidden;
+			li{
+				position: relative;
+				text-align: center;
+				width: 50%;
+				float: left;
+				margin-bottom: 26px;
+				a{
+					.pro-text01{
+						position: absolute;
+						bottom: 10px;
+						left: 64%;
+						font-size: 30px;
+						color: #993333;
+						span{
+							width: 53px;
+							height: 29px;
+							display: block;
+							margin: 0 auto;
+							font-family: Arial;
+							font-size: 18px;
+							line-height: 29px;
+							text-align: center;
+							border: 2px solid #993333;
+							border-radius: 15px;
+							behavior:url(PIE.htc);
+						}
+					}
+					.pro-text02{
+						@extend .pro-text01;
+					}
+					.pro-text03{
+						@extend .pro-text01;
+						top: 24px;
+					}
+					.pro-text04{
+						@extend .pro-text01;
+						top: 24px;
+						left: 12%;
+					}
+				}
+			}
+		}
+	}
+}
+/* 小屏幕样式结束 */
+
+
+/* 响应式(992px-1200px) */
+@media (min-width:992px) and (max-width:1200px){
+	.main{
+		.pro-show{
+			width: 870px;
+			&>a{
+				width: 48px;
+				height: 200px;
+				&.prev{
+					background: url(../images/index_prev.png) no-repeat 50%;
+					}
+				&.next{
+					background: url(../images/index_next.png) no-repeat 50%;
+				}
+			}
+			.view{
+				width: 774px;
+			}
+		}
+	}
+}
+/* 响应式(768px-992px) */
+@media (min-width:768px) and (max-width:992px){
+	.main{
+		.pro-show{
+			width: 600px;
+			&>a{
+				width: 42px;
+				height: 200px;
+				&.prev{
+					background: url(../images/index_prev.png) no-repeat 50%;
+					}
+				&.next{
+					background: url(../images/index_next.png) no-repeat 50%;
+				}
+			}
+			.view{
+				width: 516px;
+			}
+		}
+	}
+}
+/* 响应式(0-768px) */
+@media screen and (max-width:767px){
+	.main{
+		display: none;
+	}
+}
+@media screen and (min-width:768px){
+	.sm-main{
+		display: none;
+	}
+}
+@media screen and (max-width:635px){
+	.sm-main .sm-index-product{
+		ul{
+			li{
+				width: 100%;
+				a{
+					.pro-text01{
+						left: 58%
+					}
+					.pro-text04{
+						left: 26%
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:544px){
+	.sm-main .sm-header{
+		.container{
+			position: relative;
+			.sm-search{
+				margin-top: 0;
+				form{
+					display: none;
+				}
+			}
+			.sm-navbar{
+				position: absolute;
+				right: 10px;
+			}
+		}
+	}
+	.sm-main .sm-nav{
+		ul{
+			li{
+				width: 50%;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+@media screen and (max-width:400px){
+	.sm-main .sm-index-product{
+		ul{
+			li{
+				a{
+					.pro-text01{
+						left: 60%
+					}
+					.pro-text02{
+						left: 70%
+					}
+					.pro-text04{
+						left: 20%
+					}
+				}
+			}
+		}
+	}
+}
+

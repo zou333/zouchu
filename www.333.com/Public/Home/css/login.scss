@@ -1,0 +1,248 @@
+@charset "utf-8";
+body{
+	font-family: 微软雅黑;
+	font-size: 0;
+}
+.main{
+	width: 100%;
+	background: url(../images/about_us_bg.jpg) 100% 100%;
+	padding: 50px 0;
+	.content{
+		display: inline-block;
+		background: #fff;
+		overflow: hidden;
+		padding:{
+			top: 30px;
+			left: 50px;
+			right: 50px;
+			bottom: 30px;
+		}
+		h2{
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		&>span{
+			width: 408px;
+			font-family: 宋体;
+			font-size: 18px;
+			color: #999;
+			line-height: 28px;
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+			background: #fff799;
+			border: 1px solid #fff100;
+			margin-bottom: 40px;
+		}
+		form{
+			.login-box{
+				overflow: hidden;
+			}
+			label{
+				display: block;
+				overflow: hidden;
+				margin-bottom: 50px;
+				&.login-auto{
+					float: left;
+					cursor: pointer;
+					background: url(../images/login_check.png) no-repeat 0 3px;
+				}
+				&.forget-password{
+					float: right;
+				}
+				i{
+					display: block;
+					float: left;
+					width: 72px;
+					height: 58px;
+					border: 1px solid #999;
+					border-right: none;
+					&.login-user{
+						background: url(../images/login_user01.png) no-repeat 50% 50%;
+					}
+					&.login-lock{						
+						background: url(../images/login_lock01.png) no-repeat 50% 50%;
+					}
+				}
+				input{
+					font-size: 18px;
+					color: #999;
+					font-weight: normal;
+					display: block;
+					float: left;
+					width: 425px;
+					height: 58px;
+					line-height: 58px;
+					border: 1px solid #999;
+					padding: 0 16px;
+					&:focus{
+						outline: none;
+					}
+					&[type=checkbox]{
+						width: 14px;
+						height: 14px;
+						margin-right: 3px;
+						visibility: hidden;
+					}
+				}
+				span{
+					font-size: 14px;
+				}
+				a{
+					font-size: 14px;
+					display: block;
+					float: right;
+				}
+				button{
+					width: 500px;
+					height: 60px;
+					font-size: 30px;
+					color: #fff;
+					font-weight: normal;
+					background: #993333;
+					border: none;
+					&:focus{
+						outline: none;
+					}
+				}
+			}						
+		}
+		p{
+			font-size: 18px;
+			color: #999;
+			display: inline-block;
+			a{
+				color: #999;
+				margin: 0 5px;
+			}
+		}
+		&>a{
+			font-size: 20px;
+			color: #993333;
+			display: block;
+			float: right;
+		}
+	}
+}
+
+
+
+/* 响应式(992px-1200px) */
+@media (min-width:768px) and (max-width:1200px){
+	.main{
+		padding: 30px 0;
+		.content{
+			padding:{
+				top: 30px;
+				left: 40px;
+				right: 40px;
+				bottom: 30px;
+			}
+			h2{
+				font-size: 24px;
+				margin-top: 0px;
+				margin-bottom: 40px;
+			}
+			&>span{
+				width: 304px;
+				font-size: 14px;
+			}
+			form{
+				label{
+					margin-bottom: 40px;
+					i{
+						width: 54px;
+						height: 42px;
+						&.login-user{
+							background: url(../images/login_user02.png) no-repeat 50% 50%;
+						}
+						&.login-lock{						
+							background: url(../images/login_lock02.png) no-repeat 50% 50%;
+						}
+					}
+					input{
+						font-size: 14px;
+						width: 318px;
+						height: 42px;
+						line-height: 42px;
+						padding: 0 10px;
+						&[type=checkbox]{
+							width: 12px;
+							height: 12px;
+							margin-right: 3px;
+						}
+					}
+					span{
+						font-size: 12px;
+					}
+					a{
+						font-size: 12px;
+					}
+					button{
+						width: 375px;
+						height: 45px;
+						font-size: 24px;
+					}
+				}						
+			}
+			p{
+				font-size: 14px;
+			}
+			&>a{
+				font-size: 16px;
+			}
+		}
+	}
+}
+/* 小屏幕响应式 */
+@media screen and (max-width:768px){
+	.main{
+		padding: 30px 0;
+		.content{
+			width: 90%;
+			display: block;
+			margin: 0 auto;
+			padding: 10px;
+			form{
+				display: block;
+				margin: 0 auto;
+				label{
+					margin-bottom: 40px;
+					i{
+						width: 55px;
+					}
+					input{
+						width: 75%;
+						padding: 0 5px;
+						&[type=checkbox]{
+							width: 16px;
+							height: 16px;	
+						}
+					}
+					span{
+						font-size: 18px;
+						font-weight: normal;
+					}
+					a{
+						font-size: 18px;
+						font-weight: normal;
+					}
+					button{
+						display: block;
+						margin: 0 auto;
+						width: 75%;
+						height: 60px;
+						font-size: 30px;
+						font-family: 黑体;
+					}
+				}						
+			}
+			p{
+				font-size: 14px;
+			}
+			&>a{
+				font-size: 20px;
+			}
+		}
+	}
+}

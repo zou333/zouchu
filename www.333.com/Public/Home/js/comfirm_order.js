@@ -1,0 +1,11 @@
+﻿$(function(){
+	$('.address-info').click(function(){
+		$(this).addClass('default').siblings().removeClass('default');
+	});
+	$('.delete').click(function(){
+		if(confirm('确定是否删除')){
+			$(this).parents('.address-info').next().addClass('default');
+			$(this).parents('.address-info').remove();
+		};
+	});
+});

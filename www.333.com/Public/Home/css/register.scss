@@ -1,0 +1,213 @@
+@charset "utf-8";
+*{ margin: 0; padding: 0;}
+body{
+	font-family: 微软雅黑;
+	font-size: 0;
+}
+label{
+	font-weight: normal;
+}
+input,button{
+	&:focus{
+		outline: none;
+	}
+}
+.main{
+	padding: 50px;
+	background: url(../images/about_us_bg.jpg) 100% 100%;
+	.content{
+		padding: 40px;
+		background: #fff;
+	}
+	h2{
+		text-align: center;
+		margin-top: 0;
+	}
+	form{
+		width: 100%;
+		label{
+			width: 100%;
+			position: relative;
+			margin-top: 20px;
+			border: 1px solid #999;
+			text-align: right;
+			&>span{
+				font-size: 24px;
+				line-height: 58px;
+			}
+			input{
+				display: inline-block;
+				width: 75%;
+				height: 58px;
+				font-size: 16px;
+				color: #999;
+				border: none;
+				padding-right:10px;
+			}
+			&.identifying-code{
+				input{
+					padding-right: 130px;
+				}
+			}
+			a{
+				font-size: 18px;
+				line-height: 50px;
+				padding: 0 15px;
+				display: inline-block;
+				background: #ccc;
+				position: absolute;
+				top: 50%;
+				right: 4px;
+				margin-top: -25px;
+			}
+		}		
+		.agreement{
+			font-size: 16px;
+			line-height: 28px;
+			overflow: hidden;
+			margin:{
+				top: 10px;
+				bottom: 30px;
+			}
+			p{
+				float: left;
+			}
+			span{
+				font-size: 16px;
+				color: #993333;
+			}
+			label{
+				border: none;
+				cursor: pointer;
+				background: url(../images/check_box.jpg) no-repeat 0 3px;
+			}
+			input[type=checkbox]{
+				width: 20px;
+				height: 20px;
+				display: block;
+				float: left;
+				margin-right: 7px;
+				visibility: hidden;
+			}
+		}
+		button{
+			width: 100%;
+			line-height: 60px;
+			font-size: 30px;
+			color: #fff;
+			background: #993333;
+			border: none;
+		}
+	}
+}
+
+
+/* 响应式(768px-1200px) */
+@media (min-width:768px) and (max-width:1200px){
+	.main{
+		padding: 30px;
+		.content{
+			padding: 30px;
+		}
+		h2{
+			font-size: 22px;
+		}
+		form{
+			label{
+				&>span{
+					font-size: 18px;
+					line-height: 40px;
+				}
+				input{
+					height: 40px;
+					font-size: 12px;
+				}
+				&.identifying-code{
+					input{
+						padding-right: 130px;
+					}
+				}
+				a{
+					font-size: 12px;
+					line-height: 36px;
+					right: 2px;
+					margin-top: -18px;
+				}
+			}		
+			p{
+				font-size: 12px;
+				line-height: 22px;
+				span{
+					font-size: 12px;
+				}
+				input[type=checkbox]{
+					width: 15px;
+					height: 15px;
+					margin-right: 4px;
+				}
+			}
+			button{
+				width: 100%;
+				line-height: 44px;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+/* 小屏幕响应式 */
+@media screen and (max-width:768px){
+	.main{
+		h2{
+			font-size: 34px;
+		}
+		form{
+			label{
+				margin-top: 60px;
+				span{
+					font-size: 18px;
+				}
+				input{
+					font-size: 13px;
+				}
+				a{
+					background: #666;
+					color: #fff;
+					line-height: 58px;
+					right: 0;
+					top: 0;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:590px){
+	.main{
+		padding: 10px;
+		form{
+			label{
+				border: none;
+				text-align: left;
+				margin-top: 30px;
+				input{
+					width: 100%;
+					display: block;
+					border: 1px solid #666;
+					padding-left: 10px;
+				}
+				a{
+					position: relative;
+				    left: 100%;
+				    margin-left: -120px;
+				    margin-top: 10px;
+				}
+				&.identifying-code{
+					input{
+						padding-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}

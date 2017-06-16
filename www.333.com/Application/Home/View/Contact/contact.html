@@ -1,0 +1,91 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__css/contact_us.css">
+<script type="text/javascript" src='__PUBLIC__js/contact_us.js'></script>
+<!-- main开始 -->
+<div class="main">
+	<div class="container">
+		<h2>联系我们</h2>
+		<h3>Contact us</h3>
+		<p>当前位置：<a href="index.html">首页</a>><span>联系我们</span></p>
+		<div class="content">
+			<div class="map">
+				<iframe src="{:U('Contact/map')}" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-6 information">
+					<p><span>网址：{$contact['http']}</span><span>电话：{$contact['phone']}</span></p>
+					<p><span>QQ：{$contact['qq']}</span><span>邮箱：{$contact['email']}</span></p>
+					<p>地址：{$contact['address']}</p>
+					<ul class="hidden-xs">
+						<li>
+							<span>{$brand['brand_name']}官方微信</span>
+							<i class="official-code"></i>
+						</li>
+						<li>
+							<span>客服微信</span>
+							<i class="custom-service-code"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-6 message">
+					<form method="post" action="">
+						<label>
+							<input class="name" type="text" name="name" value="请输入您的姓名" onfocus="if (this.value=='请输入您的姓名') value=''" onblur="if (this.value=='') value='请输入您的姓名'" id="username" data-toggle="popover" data-placement="bottom" >
+							<input class="phone" type="text" name="phone" value="请输入您的手机" onfocus="if (this.value=='请输入您的手机') value=''" onblur="if (this.value=='') value='请输入您的手机'" id="phone" data-toggle="popover" data-placement="bottom" >
+						</label>
+						<label>
+							<textarea id="message" name="content" data-toggle="popover" data-placement="bottom" >请输入您想对我们说的话...</textarea>
+						</label>
+						<label>
+							<input class="validatebox" type="text" name="code" maxlength="5" value="请输入验证码" onfocus="if (this.value=='请输入验证码') value=''" onblur="if (this.value=='') value='请输入验证码'" id="verify" data-toggle="popover" data-placement="top" >
+							<span class="id-code"><img src="{:U('Contact/verify')}" onclick="this.src=this.src+'?'"/></span>
+						</label>
+						<label>
+							<button type="button" onclick="sub(this)">提交</button>
+							<button type="reset">重置</button>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- main结束 -->
+<script>
+function sub(o){
+	var name=$('input[name="name"]').val();
+	var phone=$('input[name="phone"]').val();
+	var content=$('textarea[name="content"]').val();
+	var code=$('input[name="code"]').val();
+	
+	if(name=="请输入您的姓名" || phone=="请输入您的手机" || code=="请输入验证码" || content=="请输入您想对我们说的话..."){
+		
+		alert('姓名or电话号码or验证码or内容不能为空');
+		return false; 
+	}
+	
+	$.ajax({
+		type:'post',
+		url:'{:U("Contact/add")}',
+		data:{
+			name:name,
+			phone:phone,
+			content:content,
+			code:code,
+		},
+		dataType:'text',
+		success:function(data){
+			if(data!='true'){
+				alert(data);
+			}else{
+				alert('留言成功');
+				window.location.href={:U('Contact/contact')};
+			}
+		},
+		error:function(e){
+			alert('网络异常');
+		}
+	});
+}
+
+
+</script>

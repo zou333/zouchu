@@ -1,0 +1,9 @@
+[ 2017-06-16T10:13:36+08:00 ] 127.0.0.1 /Admin/Goods/product/cid/1/p/2.html
+ERR: 非法操作:product
+
+[ 2017-06-16T10:14:19+08:00 ] 127.0.0.1 /Admin/GOODS/index/cid/1/p/2.html
+ERR: 无法加载控制器:GOODS
+
+[ 2017-06-16T10:15:05+08:00 ] 127.0.0.1 /Admin/Goods/indexhtml
+ERR: 非法操作:indexhtml
+

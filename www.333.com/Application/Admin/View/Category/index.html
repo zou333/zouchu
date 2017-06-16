@@ -1,0 +1,47 @@
+<link href="__PUBLIC__treetable/css/jquery.treetable.theme.default.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__treetable/jquery.treetable.js"></script>
+
+<form method="get" action="{:U()}" id="listform">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 分类列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+    <div class="padding border-bottom">
+      <ul class="search" style="padding-left:10px;">
+        <li> <a class="button border-main icon-plus-square-o" href="{:U('add')}"> 分类内容</a> </li>
+        <li>搜索：</li>
+        <li>
+          <input type="text" placeholder="请输入搜索关键字" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
+          <a href="javascript:void(0)" class="button border-main icon-search" onclick="brsearch()" > 搜索</a></li>
+      </ul>
+    </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th style="text-align:left; padding-left:20px;">ID</th>
+        <th style="text-align:left; padding-left:20px;">分类名称</th>
+        <th>操作</th>
+      </tr>
+	 <foreach name="list" item="value">
+	  <tr data-tt-id="{$value['id']}" data-tt-parent-id="{$value['parent_id']}">
+          <td><font color="#00CC99">{$value['id']}</font></td>
+          <td style="text-align:left; padding-left:20px;">{$value['cate_name']}</td>
+          <td><div class="button-group"> <a class="button border-main" href="{:U('edit',['id'=>$value['id']])}"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" onclick="return cate_del({$value['id']})"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+	  </foreach>
+      <tr>
+        <td colspan="8"><div class="pagelist">{$page}</div></td>
+      </tr>
+    </table>
+  </div>
+</form>
+<script>
+$(".table").treetable({ expandable: true });
+function cate_del(id){
+	if(confirm('确定要删除该分类吗？')){
+		url = '{:U('delete',['id'=>'idstr'])}'.replace('idstr',id);
+		window.location.href = url;
+	}
+}
+
+function brsearch(){
+	$('form').submit();
+}
+</script>

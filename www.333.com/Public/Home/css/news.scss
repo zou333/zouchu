@@ -1,0 +1,262 @@
+﻿@charset "utf-8";
+body{
+	font-family: 微软雅黑;
+	font-size: 0;
+}
+.main{
+	background: url(../images/about_us_bg.jpg) 100% 100%;
+	.container{
+		text-align: center;
+		color: #333;
+		h2{
+			display: inline-block;
+			border-bottom: 1px solid #333;
+			padding: 25px 50px 7px 50px;
+		}
+		h3{
+			font-size: 20px;
+			margin-top: 0;
+		}
+		&>p{
+			font-size: 14px;
+			text-align: left;
+			padding-top: 10px;
+			border-bottom: 1px solid #333;
+			span{
+				color: #993333;
+			}
+		}
+		.content{
+			margin-bottom: 40px;
+			padding:{
+				bottom: 35px;
+				left: 20px;
+				right: 30px;
+			}
+			background: #fff;
+			text-align: left;
+			.row{
+				width: 100%;
+				margin:{
+					left: 0;
+					right: 0;
+				}
+				border-bottom: 1px dashed #333;
+				padding:{
+					top: 20px;
+					bottom: 20px;
+				}
+				&:hover{
+					.con-text h4 a{
+						color: #993333;
+					}
+				}
+			}
+			.con-image{
+				height: 250px;
+				background: url(../images/news_left01.jpg) no-repeat;
+				a{
+					display: block;
+				    width: 100%;
+				    height: 100%;
+				}
+			}
+			.con-text{
+				padding:{
+					top: 5px;
+					left: 40px;
+				}
+				overflow: hidden;
+				h4 a{
+					font-size: 24px;
+					color: #333;
+				}
+				p{
+					padding:{
+						top: 23px;
+						bottom: 18px;
+						}
+					font-size: 16px;
+					line-height: 26px;
+					text-indent: 2em;
+				}
+				span{
+					font-size: 16px;
+				}
+				&>a{
+					font-size: 16px;
+					color: #993333;
+					display: block;
+					float: right;
+					margin-right: 30px;
+				}
+			}
+			.page{
+				padding:{
+					top: 35px;
+				}
+				text-align: center;
+				font-size: 18px;
+				ul{
+					margin-bottom: 0;
+					display: inline-block;
+					overflow: hidden;
+					li{
+						margin: 0 13px;
+						float: left;
+						border: 1px solid #666;
+						a{
+							display: block;
+							color: #000;
+							padding: 4px 12px;
+						}
+						&.active{
+							border-color: #993333;
+							background: #993333;
+							a{
+								color: #fff;
+							}
+						}
+						&:hover{
+							@extend .active;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* 响应式 */
+@media (min-width:768px) and (max-width:1200px){
+	.main{
+		.container{
+			h2{
+				font-size: 24px;
+				padding: 0px 32px 7px 32px;
+			}
+			h3{
+				font-size: 16px;
+			}
+			&>p{
+				font-size: 12px;
+			}
+		}
+	}
+}
+@media (min-width:992px) and (max-width:1024px){
+	.main{
+		.container{
+			.content{
+				padding:{
+					bottom: 15px;
+					left: 15px;
+					right: 15px;
+				}
+				.row{
+					padding:{
+						top: 15px;
+						bottom: 15px;
+					}
+				}
+				.con-image{
+					height: 181px;
+					background: url(../images/news_left02.jpg) no-repeat 25px 0;
+				}
+				.con-text{
+					padding-top: 10px;
+					h4 a{
+						font-size: 18px;
+					}
+					p{
+						padding:{
+							top: 23px;
+							bottom: 18px;
+							}
+						font-size: 12px;
+						line-height: 20px;
+					}
+					span{
+						font-size: 14px;
+					}
+					&>a{
+						font-size: 14px;
+						margin-right: 15px;
+					}
+				}
+				.page{
+					padding:{
+						top: 25px;
+					}
+					font-size: 14px;
+					ul{
+						li{
+							margin: 0 10px;
+							a{
+								padding: 2px 8px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width:768px) and (max-width:992px){
+	.main{
+		.container{
+			.content{
+				.con-image{
+					height: 250px;
+					background: url(../images/news_left01.jpg) no-repeat 50%;
+				}
+				.con-text{
+					padding:{
+						top: 10px;
+						left: 30px;
+					}
+					h4{
+						text-align: center;
+						a{
+							font-size: 22px;
+						}
+					} 
+					span{
+						margin-left: 20px;
+					}
+				}
+				.page{
+					ul{
+						li{
+							margin: 0 10px;
+							a{
+								padding: 2px 8px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:676px){
+	.main .container .content{
+		padding:{
+			left: 10px;
+			right: 10px;
+		}
+		.con-image{
+			height: 173px;
+			background-size: 100%;
+		}
+		.con-text{
+			padding-left: 0;
+		}
+	}
+	.main .container .content .page ul li{
+		margin: 5px 13px;
+	}
+}

@@ -1,0 +1,241 @@
+@charset "UTF-8";
+body {
+  font-family: 微软雅黑;
+  font-size: 0;
+}
+
+.main {
+  width: 100%;
+  background: url(../images/about_us_bg.jpg) 100% 100%;
+  padding: 50px 0;
+}
+.main .content {
+  display: inline-block;
+  background: #fff;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+.main .content h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main .content > span {
+  width: 408px;
+  font-family: 宋体;
+  font-size: 18px;
+  color: #999;
+  line-height: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background: #fff799;
+  border: 1px solid #fff100;
+  margin-bottom: 40px;
+}
+.main .content form .login-box {
+  overflow: hidden;
+}
+.main .content form label {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.main .content form label.login-auto {
+  float: left;
+  cursor: pointer;
+  background: url(../images/login_check.png) no-repeat 0 3px;
+}
+.main .content form label.forget-password {
+  float: right;
+}
+.main .content form label i {
+  display: block;
+  float: left;
+  width: 72px;
+  height: 58px;
+  border: 1px solid #999;
+  border-right: none;
+}
+.main .content form label i.login-user {
+  background: url(../images/login_user01.png) no-repeat 50% 50%;
+}
+.main .content form label i.login-lock {
+  background: url(../images/login_lock01.png) no-repeat 50% 50%;
+}
+.main .content form label input {
+  font-size: 18px;
+  color: #999;
+  font-weight: normal;
+  display: block;
+  float: left;
+  width: 425px;
+  height: 58px;
+  line-height: 58px;
+  border: 1px solid #999;
+  padding: 0 16px;
+}
+.main .content form label input:focus {
+  outline: none;
+}
+.main .content form label input[type=checkbox] {
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  visibility: hidden;
+}
+.main .content form label span {
+  font-size: 14px;
+}
+.main .content form label a {
+  font-size: 14px;
+  display: block;
+  float: right;
+}
+.main .content form label button {
+  width: 500px;
+  height: 60px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: normal;
+  background: #993333;
+  border: none;
+}
+.main .content form label button:focus {
+  outline: none;
+}
+.main .content p {
+  font-size: 18px;
+  color: #999;
+  display: inline-block;
+}
+.main .content p a {
+  color: #999;
+  margin: 0 5px;
+}
+.main .content > a {
+  font-size: 20px;
+  color: #993333;
+  display: block;
+  float: right;
+}
+
+/* 响应式(992px-1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main {
+    padding: 30px 0;
+  }
+  .main .content {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+  }
+  .main .content h2 {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .main .content > span {
+    width: 304px;
+    font-size: 14px;
+  }
+  .main .content form label {
+    margin-bottom: 40px;
+  }
+  .main .content form label i {
+    width: 54px;
+    height: 42px;
+  }
+  .main .content form label i.login-user {
+    background: url(../images/login_user02.png) no-repeat 50% 50%;
+  }
+  .main .content form label i.login-lock {
+    background: url(../images/login_lock02.png) no-repeat 50% 50%;
+  }
+  .main .content form label input {
+    font-size: 14px;
+    width: 318px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+  }
+  .main .content form label input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+  }
+  .main .content form label span {
+    font-size: 12px;
+  }
+  .main .content form label a {
+    font-size: 12px;
+  }
+  .main .content form label button {
+    width: 375px;
+    height: 45px;
+    font-size: 24px;
+  }
+  .main .content p {
+    font-size: 14px;
+  }
+  .main .content > a {
+    font-size: 16px;
+  }
+}
+/* 小屏幕响应式 */
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 30px 0;
+  }
+  .main .content {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .main .content form {
+    display: block;
+    margin: 0 auto;
+  }
+  .main .content form label {
+    margin-bottom: 40px;
+  }
+  .main .content form label i {
+    width: 55px;
+  }
+  .main .content form label input {
+    width: 75%;
+    padding: 0 5px;
+  }
+  .main .content form label input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+  }
+  .main .content form label span {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .main .content form label a {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .main .content form label button {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: 60px;
+    font-size: 30px;
+    font-family: 黑体;
+  }
+  .main .content p {
+    font-size: 14px;
+  }
+  .main .content > a {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

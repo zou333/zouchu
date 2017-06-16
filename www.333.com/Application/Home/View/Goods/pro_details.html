@@ -1,0 +1,118 @@
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__css/pro_details.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__css/jquery.mCustomScrollbar.css">
+<script type="text/javascript" src='__PUBLIC__js/pro_details.js'></script>
+<script src="__PUBLIC__js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- main开始 -->
+	<div class="main">
+		<div class="container">
+			<p>当前位置：<a href="index.html">首页</a>><a href="product.html.html">产品中心</a>><span>产品详情</span></p>
+			<div class="content">
+				<!-- 副导航开始 -->
+				<div class="subnav">
+				<foreach name="cate" item="value">
+					<a href="{:U('Goods/pro_details',['cid'=>$value['id']])}" <eq name="value['id']" value="$Think.get.cid"> class='selected' </eq> >{$value['cate_name']}</a>
+				</foreach>
+				</div>
+				<!-- 副导航结束 -->
+
+				<!-- tab选项卡开始 -->
+				<div class="tab">
+					<div class="row">
+						<div class="col-sm-12 col-md-5 col-lg-6">
+							<div class="album">
+								<img src="__PUBLIC__images/pro_big_album01.jpg" alt="" title="">
+								<div class="album_show">
+									<span class="pro_prev"><img src="__PUBLIC__images/pro_prev.png" alt="" title=""></span>
+										<div class="view">
+											<ul>
+												<li class="cur"><img src="__PUBLIC__images/pro_album01.jpg" alt="" title=""></li>
+												<li><img src="__PUBLIC__images/pro_album02.jpg" alt="" title=""></li>
+												<li><img src="__PUBLIC__images/pro_album03.jpg" alt="" title=""></li>
+												<li><img src="__PUBLIC__images/pro_album01.jpg" alt="" title=""></li>
+												<li><img src="__PUBLIC__images/pro_album02.jpg" alt="" title=""></li>
+												<li><img src="__PUBLIC__images/pro_album03.jpg" alt="" title=""></li>
+											</ul>
+										</div>
+									<span class="pro_next"><img src="__PUBLIC__images/pro_next.png" alt="" title=""></span>	
+								</div>								
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-7 col-lg-6">
+							<div class="pro_info">
+								<h2>{$goods['brand']['brand_name']}{$goods['goods_name']}{$goods['category']['cate_name']}</h2>
+								<div class="pro_text">
+									<div class="price">
+										价格:  
+										<span>￥{$goods['shop_price']}</span>
+									</div>
+									<div class="size">
+										尺码:  
+										<span class="selected">S</span>
+										<span>M</span><span>L</span>
+									</div>
+									<div class="color">
+										颜色:  
+										<span class="selected">黑格</span>
+										<span>灰色</span>
+									</div>
+									<div class="number">
+										数量:  
+										<a href="javascript:;" class="sub">-</a>
+										<input type="" name="" value="1">
+										<a href="javascript:;" class="add">+</a>
+									</div>
+									<div class="link">
+										<a href="comfirm_order.html">立即购买</a>
+										<a href="shop_cart.html">加入购物车</a>
+									</div>
+									<div class="service">
+										<span class="label">服务保证:  </span>
+										<p>
+											<span><i class="quality"></i>正品保证</span>
+											<span><i class="on_time"></i>按时发货</span>
+											<span><i class="seven_day"></i>7天无理由</span>
+										<p>
+									</div>
+									<div class="price">
+										价格:  
+										<span>￥598.00</span>
+									</div>
+									<div class="size">
+										尺码:  
+										<span class="selected">S</span>
+										<span>M</span><span>L</span>
+									</div>
+									<div class="color">
+										颜色:  
+										<span class="selected">黑格</span>
+										<span>灰色</span>
+									</div>
+									<div class="number">
+										数量:  
+										<a href="javascript:;" class="sub">-</a>
+										<input type="" name="" value="1">
+										<a href="javascript:;" class="add">+</a>
+									</div>
+									<div class="link">
+										<a href="comfirm_order.html">立即购买</a>
+										<a href="shop_cart.html">加入购物车</a>
+									</div>
+									<div class="service">
+										<span class="label">服务保证:  </span>
+										<p>
+											<span><i class="quality"></i>正品保证</span>
+											<span><i class="on_time"></i>按时发货</span>
+											<span><i class="seven_day"></i>7天无理由</span>
+										<p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- tab选项卡结束 -->	
+			</div>
+		</div>
+	</div>
+	<!-- main结束 -->

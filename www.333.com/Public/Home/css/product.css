@@ -1,0 +1,246 @@
+@charset "UTF-8";
+body {
+  font-family: 微软雅黑;
+  font-size: 0;
+}
+
+.main {
+  background: url(../images/about_us_bg.jpg) 100% 100%;
+}
+.main .container {
+  text-align: center;
+  color: #333;
+}
+.main .container h2 {
+  display: inline-block;
+  border-bottom: 1px solid #333;
+  padding: 25px 50px 7px 50px;
+}
+.main .container h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+.main .container > p {
+  font-size: 14px;
+  text-align: left;
+  padding-top: 10px;
+  border-bottom: 1px solid #333;
+}
+.main .container > p span {
+  color: #993333;
+}
+.main .container .content {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+  background: #fff;
+}
+.main .container .content .subnav {
+  width: 100%;
+  margin-bottom: 27px;
+  border: 1px solid #993333;
+}
+.main .container .content .subnav a {
+  display: inline-block;
+  width: 20%;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+.main .container .content .subnav a.selected, .main .container .content .subnav a:hover {
+  background: #993333;
+  color: #fff;
+}
+.main .container .content .tab ul {
+  overflow: hidden;
+}
+.main .container .content .tab ul li {
+  float: left;
+  text-align: center;
+}
+.main .container .content .tab ul li .pro-link {
+  padding-top: 14px;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #999;
+  overflow: hidden;
+}
+.main .container .content .tab ul li .pro-link:hover {
+  border-color: #993333;
+}
+.main .container .content .tab ul li .pro-link:hover .info {
+  color: #333;
+}
+.main .container .content .tab ul li .pro-link .pro-image {
+  display: block;
+  height: 329px;
+  width:300px;
+  background: url(../images/products_show01.jpg) no-repeat;
+  margin: 0 auto;
+}
+.main .container .content .tab ul li .pro-link .info {
+  margin-top: 17px;
+  max-width: 300px;
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+.main .container .content .tab ul li .pro-link .price {
+  color: #ff0000;
+  display: block;
+  float: left;
+  margin-top: 7px;
+  margin-bottom: 13px;
+}
+.main .container .content .tab ul li .pro-link .add-cart {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0 14px;
+  background: #993333;
+  display: block;
+  float: right;
+  border-radius: 5px;
+  behavior: url(PIE.htc);
+  position: absolute;
+  bottom: 13px;
+  right: 8px;
+}
+.main .container .content .page {
+  padding-top: 45px;
+  text-align: center;
+  font-size: 18px;
+}
+.main .container .content .page ul {
+  margin-bottom: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+.main .container .content .page ul li {
+  margin: 0 13px;
+  float: left;
+  border: 1px solid #666;
+}
+.main .container .content .page ul li a {
+  display: block;
+  color: #000;
+  padding: 4px 12px;
+}
+.main .container .content .page ul li.active, .main .container .content .page ul li:hover {
+  border-color: #993333;
+  background: #993333;
+}
+.main .container .content .page ul li.active a, .main .container .content .page ul li:hover a {
+  color: #fff;
+}
+
+/* 响应式 */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main .container h2 {
+    font-size: 24px;
+    padding: 0px 32px 7px 32px;
+  }
+  .main .container h3 {
+    font-size: 16px;
+  }
+  .main .container > p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main .container .content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main .container .content .subnav {
+    margin-bottom: 18px;
+  }
+  .main .container .content .subnav a {
+    line-height: 44px;
+    font-size: 18px;
+  }
+  .main .container .content .tab ul li .pro-link {
+    padding-top: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .main .container .content .tab ul li .pro-link .pro-image {
+    height: 237px;
+    background: url(../images/products_show02.jpg) no-repeat 50%;
+  }
+  .main .container .content .tab ul li .pro-link .info {
+    margin-top: 10px;
+    max-width: 231px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .main .container .content .tab ul li .pro-link .price {
+    margin-top: 13px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .main .container .content .tab ul li .pro-link .add-cart {
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .main .container .content .page {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .main .container .content .page ul li {
+    margin: 0 10px;
+  }
+  .main .container .content .page ul li a {
+    padding: 2px 8px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .main .container .content .tab ul li {
+    margin-bottom: 20px;
+  }
+  .main .container .content .page ul li {
+    margin: 0 10px;
+  }
+  .main .container .content .page ul li a {
+    padding: 2px 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .container .content .tab ul li {
+    margin-bottom: 20px;
+  }
+  .main .container .content .page ul li {
+    margin: 5px 10px;
+  }
+  .main .container .content .page ul li a {
+    padding: 2px 8px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main .container .content .subnav {
+    text-align: left;
+  }
+
+  .main .container .content .subnav a {
+    width: 33.3333%;
+    border: 1px solid #fff;
+  }
+
+  .main .container .content .tab ul li .pro-link .pro-image {
+    width: 219px;
+    height: 240px;
+    background-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=product.css.map */

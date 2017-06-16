@@ -1,0 +1,493 @@
+﻿@charset "utf-8";
+body{
+	font-family: 微软雅黑;
+	font-size: 0;
+}
+.main{
+	padding:{
+		top: 30px;
+	}
+	background: url(../images/about_us_bg.jpg) 100% 100%;
+	.container{
+		color: #333;
+		padding:{
+			bottom: 38px;
+		}
+		&>p{
+			font-size: 14px;
+			text-align: left;
+			padding-top: 10px;
+			border-bottom: 1px solid #333;
+			span{
+				color: #993333;
+			}
+		}
+		.content{
+			background: #fff;
+			padding:{
+				top: 30px;
+				left: 35px;
+				right: 35px;
+				bottom: 30px;
+			}
+			.order-content{
+				border: 1px solid #999;
+				padding:{
+					top: 18px;
+					bottom: 40px;
+				}
+			}
+			.order-subnav{
+				width: 83%;
+				text-align: center;
+				h3{
+					background: #993333;
+					line-height: 48px;
+					color: #fff;
+					margin:{
+						top: 0;
+						bottom: 0;
+					}
+					border: 1px solid #999;
+					border-bottom: none;
+				}
+				dl{
+					border: 1px solid #999;
+					padding-bottom: 25px;
+					dt{
+						font-size: 18px;
+						color: #fff;
+						background: #aaa;
+						font-weight: normal;
+						line-height: 40px;
+						margin: 20px 0;
+						position: relative;
+						&:first-child{
+							margin-top: 0;
+						}
+						i{
+							display: inline-block;
+							width: 24px;
+							height: 24px;
+							background: url(../images/order_icon01.png) no-repeat;
+							position: absolute;
+    						top: 50%;
+    						margin-top: -12px;
+    						left: 14%;
+							&.order-user{
+								
+							}
+							&.order-form{
+								background-position: 33%;
+							}
+							&.order-wallet{
+								background-position: 66%;
+							}
+							&.order-safe{
+								background-position: 100%;
+							}
+						}
+					}
+					dd{
+						font-size: 14px;						
+						a{
+							&:hover{
+								color: #993333;
+							}
+							&.cur{
+								@extend :hover;
+							}
+						}
+					}
+				}				
+			}
+			.order-header{
+				margin-bottom: 10px;
+				border-bottom: 1px solid #999;
+				ul{
+					overflow: hidden;
+					li{
+						float: left;
+						width: 33.3333%;
+						text-align: center;
+						a{
+							display: inline-block;
+							font-size: 14px;
+							padding: 2px;
+							border-bottom: 5px solid #fff;
+							&:hover{
+								color: #993333;
+								border-bottom: 5px solid #993333;
+							}
+							&.cur{
+								@extend :hover;
+							}
+						}
+					}
+				}
+				
+			}
+			table{
+				width: 100%;
+				thead{
+					font-size: 18px;
+					color: #fff;
+					line-height: 40px;
+					background: #993333;
+					tr{
+						th{
+							width: 13%;
+							font-weight: normal;
+							text-align: center;
+							border-right: 1px solid #fff;
+							&:first-child{
+								width: 48%;
+							}
+						}
+					}
+				}
+				tbody{
+					tr{
+						border-bottom: 1px solid #666;
+						td{
+							text-align: center;
+							font-size: 14px;
+							padding:{
+								top: 21px;
+								bottom: 18px;
+							}
+							p{
+								font-size: 16px;
+							}
+							a{
+								display: inline-block;
+								max-width: 200px;
+								&:hover{
+									color: #993333;
+								}
+								&.cur{
+									@extend :hover;
+								}
+							}
+							&:first-child{
+								text-align: left;
+								a{
+									padding-left: 5px;									
+								}
+							}
+						}
+					}
+				}
+			}
+			ol{
+    			padding: 15px;
+    			border-bottom: 1px solid #999;
+				overflow: hidden;
+				li{
+					float: left;
+					h4{
+						margin-top: 0;
+						a{
+							font-size: 18px;
+							line-height: 22px;
+						}
+					} 
+					p{
+						font-size: 16px;
+						margin-top: 10px;
+						overflow: hidden;
+						span{
+							display: inline-block;
+							margin-right: 15px;
+						}
+						button,a{
+							display: inline-block;
+						    line-height: 30px;
+						    text-align: center;
+						    width: 80px;
+						    background: #993333;
+						    color: #fff;
+						    border: none;
+						    float: left;
+						    border-radius: 5px;
+						    behavior: url(PIE.htc);
+						    margin-right: 5px;
+						    margin-bottom: 5px;
+						}
+					}
+					&.order-image{
+						width: 40%;
+						text-align: center;
+						a{
+							display: inline-block;
+						}
+					}
+					&.order-info{
+						margin-top: 10px;
+						width: 60%;
+					}
+					&.operate{
+						width: 100%;
+						text-align: right;
+						p{
+							display: inline-block;
+						}
+					}
+				}
+			}
+			.page{
+				width: 540px;
+   				margin: 0 auto;
+				padding:{
+					top: 10px;
+				}
+				font-size: 14px;
+				overflow: hidden;
+				ul{
+					margin-bottom: 0;
+					display: block;
+					float: left;
+					li{
+						margin: 0 13px;
+						float: left;
+						border: 1px solid #666;
+						a{
+							display: block;
+							color: #000;
+							padding: 4px 10px;
+						}
+						&.active{
+							border-color: #993333;
+							background: #993333;
+							a{
+								color: #fff;
+							}
+						}
+						&:hover{
+							@extend .active;
+						}
+					}
+				}
+				form{
+					float: left;
+					margin-left: 5px;
+					label{
+						font-weight: normal;
+						input{
+							width: 30px;
+							line-height: 28px;
+							border: none;
+							border: 1px solid #666;
+							margin: 0 5px;
+							text-align: center;
+							&:focus{
+								outline: none;
+							}
+						}
+					}
+					button{
+						line-height: 22px;
+						background: none;
+    					border: none;
+    					border: 1px solid #666;
+    					padding: 3px 8px;
+    					margin-left: 10px;
+    					&:focus{
+    						outline: none;
+    					}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* 响应式 */
+@media (min-width:768px) and (max-width:1200px){
+	.main{
+		.container{
+			&>p{
+				font-size: 12px;
+			}
+			.content{
+				padding:{
+					top: 10px;
+					bottom: 10px;
+					left: 20px;
+				}
+				.order-content{
+					padding:{
+						top: 9px;
+						bottom: 20px;
+					}
+				}
+				.order-subnav{
+					width: 83%;
+					h3{
+						font-size: 20px;
+						line-height: 35px;
+					}
+					dl{
+						padding-bottom: 10px;
+						dt{
+							font-size: 16px;
+							line-height: 30px;
+							margin: 10px 0;
+							i{
+								width: 18px;
+								height: 18px;
+								background: url(../images/order_icon02.png) no-repeat;
+	    						margin-top: -9px;
+	    						left: 14%;
+							}
+						}
+						dd{
+							font-size: 14px;
+						}
+					}				
+				}
+				.order-header{
+					margin-bottom: 8px;					
+				}
+				table{
+					thead{
+						font-size: 16px;
+						line-height: 36px;
+					}
+					tbody{
+						tr{
+							td{
+								font-size: 12px;
+								padding:{
+									top: 10px;
+									bottom: 11px;
+								}
+								p{
+									font-size: 14px;
+								}
+								img{
+									width: 130px;
+								}
+								a{
+									max-width: 160px;
+								}
+							}
+						}
+					}
+				}
+				.page{
+					width: 420px;
+					padding:{
+						top: 20px;
+					}
+					font-size: 12px;
+					ul{
+						li{
+							margin: 0 10px;
+							a{
+								display: block;
+								color: #000;
+								padding: 2px 6px;
+							}
+						}
+					}
+					form{
+						label{
+							input{
+								width: 25px;
+								line-height: 21px;
+							}
+						}
+						button{
+							line-height: 21px;
+	    					padding: 0 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width:768px) and (max-width:992px){
+	.main{
+		.container{
+			.content{
+				.order-subnav{
+					dl{
+						dt{
+							i{
+								display: none;
+							}
+						}
+						dd{
+							font-size: 14px;
+						}
+					}				
+				}
+				.order-content{
+					padding:{
+						top: 15px;
+					}
+				}
+				.order-header{
+					margin-bottom: 12px;
+					ul li a{
+						padding-bottom:4px;
+					}					
+				}
+				table{
+					thead{
+						tr{
+							td{
+								width: 15%;
+								&:first-child{
+									width: 55%;
+								}
+							}
+						}
+					}
+					tbody{
+						tr{
+							td{
+								padding:{
+									top: 15px;
+									bottom: 15px;
+								}
+								img{
+									width: 100px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:767px){
+	.main .container .content .page{
+		width: 100%;
+		ul{
+			li{
+				margin-bottom: 5px;
+				margin-right: 10px;
+			}
+		}
+		form{
+			float: right;
+		}
+	}
+}
+@media screen and (max-width:550px){
+	.main .container .content ol li{
+		&.order-info{
+			width: 100%;
+		}
+		&.order-image{
+			width: 100%;
+		}
+	}
+}

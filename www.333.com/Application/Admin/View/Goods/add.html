@@ -1,0 +1,238 @@
+
+<script src="__PUBLIC__uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__layer-v3.0.3/layer/layer.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__uploadify/uploadify.css">
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span><empty name="Think.get.id"> 添加 <else /> 修改</empty>内容</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="">  
+      <div class="form-group">
+        <div class="label">
+          <label>商品名：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="{$goods['goods_name']}" name="goods_name" data-validate="required:请输入商品名" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>图片：</label>
+        </div>
+        <div class="field">
+			<input id="file_upload" name="file_upload" type="file" multiple="true"  value="+ 浏览上传">
+			<div id="queue" style="overflow=" hidden"="">
+			<notempty name="Think.get.id">
+				<dl id="SWFUpload_0_0" style="float:left; margin-right:10px;">
+					<dt style="border:1px solid red;margin:5px 0;">
+						<img src="/{$goods['image']}" width="100" height="100">
+					</dt>
+					<dd style="text-align:center;">
+						<button onclick="masterpic(this)" type="button" style="margin-right:5px;color:red;">主图</button>
+						<button onclick="removepic(this)" type="button">删除</button>
+						<input type="hidden" name="pic[]" value="Public/Upload/2017-06-10/593b9c6e528ba.gif">
+					</dd>
+				</dl>
+				<notempty name="goods['goods_img']">
+				<foreach name="goods['goods_img']" item="value">
+				<dl id="SWFUpload_0_0" style="float:left; margin-right:10px;">
+					<dt style="border:1px solid #999;margin:5px 0;">
+						<img src="/{$value['photo']}" width="100" height="100">
+					</dt>
+					<dd style="text-align:center;">
+						<button onclick="masterpic(this)" type="button" style="margin-right:5px;">主图</button>
+						<button onclick="removepic(this)" type="button">删除</button>
+						<input type="hidden" name="pic[]" value="Public/Upload/2017-06-10/593b9c6e528ba.gif">
+					</dd>
+				</dl>
+				</foreach>
+				</notempty>
+			</notempty>
+			</div>
+			<div id="queue" style="overflow="hidden"></div>
+        </div>
+      </div> 
+	  <div class="form-group">
+        <div class="label">
+          <label>规格：</label>
+        </div>
+		<button type="button" onclick="add_spec(this)">添加规格</button>
+		<div id="add_spec_body">{$spec_group}</div>
+	  </div>
+	<div class="form-group">
+	  <div class="label">
+		<label>品牌名：</label>
+	  </div>
+	  <div class="field">
+		<select name="brand_id" class="input w50">
+		  <option value="">请选择品牌</option>
+		  <foreach name="brand" item="value">
+		  <option <eq name="value['id']" value="$goods['brand_id']">selected </eq> value="{$value['id']}">{$value['brand_name']}</option>
+		  </foreach>
+		</select>
+		<div class="tips"></div>
+	  </div>
+	</div>
+        <div class="form-group">
+          <div class="label">
+            <label>分类名：</label>
+          </div>
+          <div class="field">
+            <select name="category_id" class="input w50">
+              <option value="">请选择分类</option>
+			  <foreach name="cate" item="value" key="k">
+              <option <eq name="value['id']" value="$goods['category_id']">selected </eq> value="{$value['id']}">{:str_repeat('&nbsp;&nbsp;&nbsp;',$value['level']-1)}{$value['cate_name']}</option>
+			  </foreach>
+            </select>
+            <div class="tips"></div>
+          </div>
+        </div>
+      <div class="form-group">
+        <div class="label">
+          <label>商品价格：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="shop_price" value="{$goods['shop_price']|default='0'}" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>市场价格：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="market_price" value="{$goods['market_price']|default='0'}" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>商品详情：</label>
+        </div>
+        <div class="field">
+          <!-- <textarea name="content" class="input" style="height:450px; border:1px solid #ddd;"></textarea> -->
+		  <!-- 加载编辑器的容器 -->
+		<script id="container" name="content" type="text/plain">
+		{$goods['goods_desc']['content']}
+		</script>
+		<!-- 配置文件 -->
+		<script type="text/javascript" src="__PUBLIC__ueditor/ueditor.config.js"></script>
+		<!-- 编辑器源码文件 -->
+		<script type="text/javascript" src="__PUBLIC__ueditor/ueditor.all.js"></script>
+		<!-- 实例化编辑器 -->
+		<script type="text/javascript">
+			var ue = UE.getEditor('container');
+		</script>
+			<div class="tips"></div>
+        </div>
+      </div>
+     
+      <div class="clear"></div>
+      <!-- <div class="form-group"> -->
+        <!-- <div class="label"> -->
+          <!-- <label>点击次数：</label> -->
+        <!-- </div> -->
+        <!-- <div class="field"> -->
+          <!-- <input type="text" class="input w50" name="views" value="" data-validate="member:只能为数字"  /> -->
+          <!-- <div class="tips"></div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+	<!-- 加载完页面后执行 -->
+	$(function() {
+		$('#file_upload').uploadify({
+			'buttonText' : '+ 浏览上传',
+			'swf'      : '__PUBLIC__uploadify/uploadify.swf',
+			'uploader' : '{:U("Goods/upload")}',
+			'fileObjName' : 'pic',
+			'onUploadSuccess' : function(file, data, response) {
+				<!-- console.log(data); -->
+				var data=eval("("+data+")");
+				if(data.code==0){
+					var html='<dl id="'+file.id+'" style="float:left; margin-right:10px;">'+
+						'<dt style="border:1px solid #999;margin:5px 0;"><img src="/'+data.path+'" width="100" height="100"></dt>'+
+						'<dd style="text-align:center;">'+
+							'<button onclick="masterpic(this)" type="button" style="margin-right:5px;">主图</button>'+
+							'<button onclick="removepic(this)"     type="button">删除</button><input type="hidden" name="pic[]" value="'+data.path+'"></dd></dl>';
+				}
+				$('#queue').append(html); // append() 在选中元素后面插入内容
+			}
+		});
+	});
+	
+	function masterpic(m){
+		
+		// 区分主图和相册
+		$(m).parents('#queue').find('input[type="hidden"]').prop('name','pic[]');
+		$(m).siblings('input[type="hidden"]').prop('name','image');
+		
+		// 点击主图时让图片边框线颜色为红色
+		$(m).parents('#queue').find('dt').css({border:'1px solid #999'});
+		$(m).parents('dl').find('dt').css({border:'1px solid red'});
+		
+		// 方法一 点击主图时让主图字体颜色为红色
+		$(m).parents('#queue').find('button').css({color:''});
+		$(m).css({color:'red'});
+		
+		
+		// 方法二 点击主图时让主图隐藏
+		/*$(m).parents('#queue').find('button').css({display:'block'});
+		$(m).css({display:'none'});*/
+		
+	}
+	
+	<!-- function spec(o){ -->
+		<!-- layer.tab({ -->
+		  <!-- area: ['600px', '300px'], -->
+			<!-- $(o).each("{}") -->
+		  <!-- tab: [{ -->
+			<!-- title: 'TAB1',  -->
+			<!-- content: '内容1' -->
+		  <!-- }, { -->
+			<!-- title: 'TAB2',  -->
+			<!-- content: '内容2' -->
+		  <!-- }, { -->
+			<!-- title: 'TAB3',  -->
+			<!-- content: '内容3' -->
+		  <!-- }] -->
+		<!-- }); -->
+	<!-- } -->
+	
+	
+	function removepic(o){
+		if(confirm('确定删除该图片吗 ?*?  ?^…^?')){
+			$(o).parents('dl').remove();
+		}
+	}
+	
+	function add_spec(o){
+		$.ajax({
+			type:'get',
+			url:'{:U("Goods/add_spec")}',
+			datatype:'html',
+			success:function(data){
+				//页面层
+				layer.open({
+				  type: 1,
+				  skin: 'layui-layer-rim', //加上边框
+				  area: ['420px', '240px'], //宽高
+				  content: data
+				});
+			},
+		});
+	}
+	
+</script>

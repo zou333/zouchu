@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body {
+  font-family: 微软雅黑;
+  font-size: 0;
+}
+
+.main {
+  background: url(../images/about_us_bg.jpg) 100% 100%;
+}
+.main .container {
+  text-align: center;
+  color: #333;
+}
+.main .container h2 {
+  display: inline-block;
+  border-bottom: 1px solid #333;
+  padding: 25px 50px 7px 50px;
+}
+.main .container h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+.main .container > p {
+  font-size: 14px;
+  text-align: left;
+  padding-top: 10px;
+  border-bottom: 1px solid #333;
+}
+.main .container > p span {
+  color: #993333;
+}
+.main .container .content {
+  margin-bottom: 40px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  background: #fff;
+  text-align: left;
+}
+.main .container .content .con-image {
+  height: 554px;
+  background: url(../images/about_us_left01.jpg) no-repeat;
+}
+.main .container .content p {
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 18px;
+  line-height: 36px;
+  text-indent: 2em;
+}
+
+/* 响应式 */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main .container h2 {
+    font-size: 24px;
+    padding: 0px 32px 7px 32px;
+  }
+  .main .container h3 {
+    font-size: 16px;
+  }
+  .main .container > p {
+    font-size: 12px;
+  }
+  .main .container .content .con-image {
+    height: 394px;
+    background: url(../images/about_us_left02.jpg) no-repeat;
+    background-size: 100%;
+  }
+  .main .container .content p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main .container .content {
+    padding-left: 0;
+  }
+  .main .container .content p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 36px;
+    text-indent: 2em;
+  }
+  .main .container .content .con-image {
+    width: 394px;
+    height: 394px;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/about_us_left02.jpg) no-repeat;
+  }
+  .main .container .content p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main .container .content .con-image {
+    width: 260px;
+    height: 260px;
+    background-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=about_us.css.map */

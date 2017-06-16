@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$title}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__css/common.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__css/index.css">
+	<script type="text/javascript" src="__PUBLIC__js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__libs/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src='__PUBLIC__js/hammer.min.js'></script>
+</head>
+<body>
+<switch name="title">
+ <case value="商城首页">
+	<!-- sm-header开始 -->
+	<div class="sm-header visible-xs">
+		<div class="container">
+			<div class="col-xs-3 sm-logo"><a href="index.html"></a></div>
+			<div class="col-xs-8 sm-search">
+				<form class="center-block">
+					<input type="text" name="" value="请输入关键词" onfocus="if (this.value=='请输入关键词') value=''" onblur="if (this.value=='') value='请输入关键词'"/>
+					<button type="submit">搜索</button>
+				</form>5
+			</div>
+			<div class="col-xs-1 sm-navbar">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sm-subnav" aria-expanded="true" id='navOp'>  
+			            <span class="sr-only">Toggle navigation</span>  
+			            <span class="icon-bar"></span>  
+			            <span class="icon-bar"></span>  
+			            <span class="icon-bar"></span>  
+		          </button>
+				<ul id="sm-subnav" class="collapse">
+				    <li><a href="/">首页</a></li>
+					<li><a href="about_us.html">品牌介绍</a></li>
+					<li><a href="{:U('Goods/index')}">产品中心</a></li>
+					<li><a href="news.html">新闻中心</a></li>
+					<li><a href="user.html">会员中心</a></li>
+					<li><a href="contact_us.html">联系我们</a></li>
+		    		<li><a href="login.html">登录/注册</a></li>
+				    <li><a href="shop_cart.html">购物车</a></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+	<!-- sm-header结束 -->
+	</case>
+	<default />
+	<!-- header开始 -->
+	<div class='header hidden-xs'>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-sm-2 col-md-2 col-lg-2'>
+					<a href="__PUBLIC__index.html"><img class="logo" src="__PUBLIC__images/logo.png" alt='logo加载失败' title=""></a>
+				</div>
+				<div class='col-sm-10 col-md-10 col-lg-10'>
+					<div class='login'>
+						<a href="__PUBLIC__login.html">登录</a>
+						<span>/</span>
+						<a href="__PUBLIC__register.html">注册</a>
+						<form>
+							<input type="text" name="">
+							<button type="submit"><img src="__PUBLIC__images/search.png" title="" alt=""></button>
+						</form>
+						<a href="__PUBLIC__shop_cart.html"><img src="__PUBLIC__images/shopping.png" alt="" title="">购物车</a>
+					</div>
+					<div class='nav'>
+						<ul class="nav-pills">
+							<li><a href="__PUBLIC__index.html" class="home">首页</a></li>
+							<li><a href="__PUBLIC__about_us.html">品牌介绍</a></li>
+							<li class="current"><a href="__PUBLIC__product.html">产品中心</a></li>
+							<li><a href="__PUBLIC__news.html">新闻中心</a></li>
+							<li><a href="__PUBLIC__user.html">会员中心</a></li>
+							<li><a href="__PUBLIC__contact_us.html">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header结束 -->
+	</switch>
+	

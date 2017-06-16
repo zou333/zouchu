@@ -1,0 +1,118 @@
+[ 2017-06-15T18:34:28+08:00 ] 127.0.0.1 /Home/Contact/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\333\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `message` (`name`,`phone`,`content`,`create_time`) VALUES ('添加','15688997755','添加添加添加添加添加添加添加','1497522868') [ RunTime:0.0332s ]
+
+[ 2017-06-15T18:38:21+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:39:18+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:39:20+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:39:20+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:39:20+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:39:20+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:39:20+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:40:40+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1,1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1,1  
+
+[ 2017-06-15T18:41:44+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:44+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:45+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:45+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:45+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:45+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:45+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:46+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:46+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:46+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:47+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:47+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:47+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:47+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T18:41:47+08:00 ] 127.0.0.1 /Home/Contact/contact.html
+ERR: 1064:Erreur de syntaxe près de 'by id desc LIMIT 1' à la ligne 1
+ [ SQL语句 ] : SELECT * FROM `contact` ORDER BY by id desc LIMIT 1  
+
+[ 2017-06-15T20:48:06+08:00 ] 127.0.0.1 /Home/Atricle/news.html
+ERR: 无法加载控制器:Atricle
+
+[ 2017-06-15T20:48:17+08:00 ] 127.0.0.1 /Home/Article/news.html
+ERR: Think\Controller:displey方法不存在！
+
+[ 2017-06-15T20:48:27+08:00 ] 127.0.0.1 /Home/Article/news.html
+ERR: 模板不存在:./Application/Home/View/Article/news.html
+
+[ 2017-06-15T20:53:49+08:00 ] 127.0.0.1 /Home/Atricle/news.html
+ERR: 无法加载控制器:Atricle
+
+[ 2017-06-15T20:53:56+08:00 ] 127.0.0.1 /Home/Article/news_details.html
+ERR: 非法操作:news_details
+
+[ 2017-06-15T20:55:54+08:00 ] 127.0.0.1 /Home/Article/news_details.html
+ERR: 非法操作:news_details
+
